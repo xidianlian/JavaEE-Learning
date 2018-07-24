@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	
+	function fun()
+	{
+		var img = document.getElementById("demo");
+		//js dom方式
+		img.src="/HttpServlet/Verification?"+new Date().getTime();
+		//Xml dom方式
+		//img.setAttribute("src","/HttpServlet/Verification?"+new Date().getTime());
+	
+	}
+</script>
+</head>
+<body>
+	<form action="/HttpServlet/FormData" method="get">
+	用户名：<input name="username" type="text"/><br/>
+	密码：<input name="psw" type="password"/><br/>
+	爱好：
+		<input type="checkbox" name="hobby"value="篮球">篮球
+		<input type="checkbox" name="hobby"value="足球">足球
+		<br>
+	验证码：<input name="yzm" type="text"/><br/>
+		<img src="/HttpServlet/Verification" id="demo" onclick="fun();"/><br/>
+		<input type="submit" value="提交" />
+		
+	</form>
+</body>
+</html>
