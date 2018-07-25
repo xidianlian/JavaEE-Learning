@@ -43,11 +43,10 @@ public class Response extends HttpServlet {
 		//得到一个字符输出流
 		PrintWriter out = response.getWriter();
 		out.write("你好吗tom 杰瑞!!");
-	/*
-	 *  out.getWriter()和getOutputStream()。不能同时用，
-		ServletOutputStream sos = response.getOutputStream();
-		sos.write("哈喽大家好，我是字节流".getBytes());//getBytes()默认是用操作系统的编码（即：GBK）;
-	*/
+	 // out.getWriter()和getOutputStream()。不能同时用，
+//		ServletOutputStream sos = response.getOutputStream();
+//		sos.write("哈喽大家好，我是字节流".getBytes());//getBytes()默认是用操作系统的编码（即：GBK）;
+
 	}
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		

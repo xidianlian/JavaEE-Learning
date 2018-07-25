@@ -36,8 +36,11 @@ public class Verification extends HttpServlet {
 		//response.setIntHeader("refresh",1);
 		//1s后跳转一个页面
 		response.setHeader("refresh","1;url=/HttpServlet/Verification");
-		ValidateCode vc=new ValidateCode(100, 25, 4, 5) ;
-		vc.write(response.getOutputStream());
+		//1.调用jar包
+//		ValidateCode vc=new ValidateCode(100, 25, 4, 5) ;
+//		vc.write(response.getOutputStream());
+		//2.自写
+		validateCode(response);
 	}
 	/**
 	 * @param response
