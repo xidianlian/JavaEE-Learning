@@ -29,9 +29,9 @@ public class Test {
 //			rh.test4();
 //			rh.test5();
 //			rh.test6();
-//			rh.test7();
-			rh.test8();
-			rh.test9();
+			rh.test7();
+//			rh.test8();
+//			rh.test9();
 			
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
